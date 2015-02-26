@@ -68,3 +68,4 @@ function setupLight_Callback(light){
 }
 chrome.browserAction.onClicked.addListener(function(tab) { ToggleLight()});
 setupIcon();
+setInterval(function(){ setupIcon(); }, 3000);
